@@ -2,19 +2,41 @@
     margin: 0;
     padding: 0;
 }
-
-
 html,body{
     height: 100%;
 }
-
-body.capa{
+header{
+    background-color: black;
+    color: #ffffff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo{
+    width: 60px;
+    position: absolute;
+    margin-left: 5%;
+}
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li {
+    float: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+li:hover{
+    background-color:rgb(6, 78, 231);
+}
+div#cap1{
     background: url("download (2).jpg");
     background-size: cover;
-    background-position: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-section#capítulo1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,49 +44,71 @@ section#capítulo1{
     color: #ffffff;
     height: 100%;
 }
-section#capítulo1 h1{
+div#cap1 h1{
     font-size: 48px;
     background-color: rgba(0, 0, 0, 0.6);
 
 }
-section#capítulo1 h2{
+div#cap1 h2{
     background-color:rgba(0, 0, 0, 0.6)
 }
-section#capítulo1 button{
-    padding: 10px, 25px;
+div#cap1 button{
+    padding: 25px, 10px, 25px, 10px;
     background: rgba(0, 0, 0, 0.6);
     color: white;
-    border: none;
+    border: black solid;
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 section#container{
     margin: 0 auto!important;
     max-width: 800px;
-    padding: 20px 100px;
+    float: left;
+    padding: 20px;
+
 }
-section#Desafio-2{
-    padding: 20px 100px;
+.coluna{
+    float: left;
+    position: relative;
+    padding: 0 5%;
+}
+.dois{
+    width: 40%;
+}
+.quatro{
+    width: 10%;
+    padding: 7%;
+}
+section{
+    margin: 120px;
+    padding: 20px;
     text-align: justify;
+    font-size: 14px;
+    background-color: #ffffff;
+    
 }
-section#Desafio-2 h1{
+section h1{
     font-size: 48px;
 }
-section#desafio-3{
-    padding: 20px 200px;
-    text-align: justify;;
+section h2{
+    font-size: 32px;
 }
 section#desafio-3 div:hover{
     background-color: silver;
-    padding: 10px;
-
+    padding: 20 10 20 10;
 }
-section#desafio-3 h5 {
-    font-size: 36px;
+section h5 {
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
-section#desafio-3 p{
+section p{
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
+    font-size: 16px;
+}
+footer{
+    background-color:rgb(6, 78, 231);
+    width: 100%;
+    float: left;
 }
